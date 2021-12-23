@@ -2,6 +2,8 @@ package com.klb.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
  * @program: klb-authentication
@@ -10,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create: 2021-12-22 09:55
  */
 @SpringBootApplication
+@EnableWebSecurity
 public class AuthenticationApplication {
 
     public static void main(String[] args) {
